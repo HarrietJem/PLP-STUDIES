@@ -1,1 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanjiku Kangethe’s Futuristic Portfolio</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black background */
+            color: #FFFFFF; /* White text for contrast */
+        }
 
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6B46C1, #00DDEB); /* Purple to Neon Blue gradient */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 221, 235, 0.5); /* Neon glow */
+        }
+
+        header h1 {
+            margin: 0;
+            color: #FFFFFF;
+            text-shadow: 0 0 10px #00DDEB; /* Neon Blue glow */
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
+            box-shadow: 0 0 10px #00DDEB; /* Neon Blue glow */
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1A1A1A; /* Darker Black/Grey */
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #00DDEB; /* Neon Blue */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #6B46C1; /* Purple on hover */
+            text-shadow: 0 0 8px #6B46C1; /* Purple glow */
+        }
+
+        /* Main content */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1A1A1A; /* Darker Black/Grey */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(107, 70, 193, 0.3); /* Subtle Purple glow */
+            min-height: calc(100vh - 200px); /* Prevents footer overlap */
+        }
+
+        h2 {
+            color: #6B46C1; /* Purple */
+            font-weight: bold; /* Bold text instead of shadow */
+        }
+
+        h3 {
+            color: #00DDEB; /* Neon Blue */
+        }
+
+        p, li {
+            line-height: 1.6;
+            color: #E0E0E0; /* Light Grey for readability */
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .vision {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        /* Button and Links */
+        .btn, a[href$=".pdf"] {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #00DDEB, #6B46C1); /* Neon Blue to Purple gradient */
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0 0 10px #00DDEB; /* Neon Blue glow */
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover, a[href$=".pdf"]:hover {
+            background: linear-gradient(45deg, #6B46C1, #00DDEB); /* Reversed gradient */
+            box-shadow: 0 0 15px #6B46C1; /* Purple glow on hover */
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #00DDEB;
+            border-radius: 5px;
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000; /* Black */
+            color: #00DDEB; /* Neon Blue */
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 221, 235, 0.5); /* Neon Blue glow */
+        }
+    </style>
+    <script>
+        // Basic JS to handle form submission (placeholder until script.js)
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("contact-form");
+            const message = document.getElementById("form-message");
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                message.textContent = "Thanks for reaching out!";
+                form.reset();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Wanjiku Kangethe’s Portfolio</h1>
+        <img src="1PORTFOLIO.jpg" alt="Wanjiku Kangethe">
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#references">References</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <p>Enthusiastic and driven Business Administration student, currently expanding my skill set through the Power Learn Project’s tech training program.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>With a solid foundation in research, strategic planning, and administrative management, I am now building expertise in coding and technology-driven solutions. Passionate about applying my business knowledge to solve real-world challenges using technology. Eager to leverage my combined understanding of business operations and tech development to drive innovation, optimize processes, and contribute to the digital transformation of organizations.</p>
+            <h3>Interests</h3>
+            <ul>
+                <li>Being tech-savvy and developing real-world solutions.</li>
+                <li>Exploring data visualization to uncover actionable insights.</li>
+                <li>Advocating for sustainable tech innovations.</li>
+            </ul>
+            <h3>Where I See Myself in 5 Years</h3>
+            <p class="vision">In 5 years, I see myself leading innovative projects at the intersection of business strategy and technology, driving digital transformation and optimizing business operations through data-driven solutions.</p>
+            <p class="vision">My vision is to combine my business knowledge and tech skills to develop an app that provides a practical solution to a common problem. I aspire to create a user-centered platform that simplifies tasks, improves efficiency, and ultimately drives positive change. By leveraging technology and data, I aim to build a sustainable and impactful tech company.</p>
+            <a href="WANJIKU'S CV.pdf" download>Download My CV</a>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Programming Languages: Python, JavaScript, HTML/CSS, SQL</li>
+                <li>Web Development: HTML5, CSS3, JavaScript (Frontend); SQL (Backend); Learning full-stack development</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Database Management: MySQL</li>
+                <li>Problem-Solving: Data structures (arrays, lists, trees), algorithms</li>
+                <li>Tech Tools: Visual Studio Code</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Project Management: Prioritizing tasks, meeting deadlines</li>
+                <li>Critical Thinking: Logical reasoning for technical challenges</li>
+                <li>Collaboration: Teamwork in group projects</li>
+                <li>Communication: Explaining tech concepts clearly</li>
+                <li>Adaptability: Learning new technologies quickly</li>
+                <li>Time Management: Balancing studies and coding</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor of Business Administration, USIU-A, – Focused on research, strategic planning, and administrative management.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><strong>Python Assignment Week 2</strong><br>A Python project tackling coding challenges from Power Learn Project’s Week 2 assignment, showcasing problem-solving skills.<br><a href="https://github.com/HarrietJem/Python_Assignment_Week2" class="btn">View on GitHub</a></p>
+            <p><strong>PLP Studies</strong><br>A collection of exercises and assignments from the Power Learn Project Scholarship, highlighting my tech learning journey.<br><a href="https://github.com/HarrietJem/PLP-STUDIES" class="btn">View on GitHub</a></p>
+            <p><strong>Basic Calculator</strong><br>A simple calculator built in Python, demonstrating fundamental programming logic and user input handling.<br><a href="https://github.com/HarrietJem/basic-calculator" class="btn">View on GitHub</a></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+
+        <section id="references">
+            <h2>References</h2>
+            <p><strong>Miss Jacqueline Cherotich</strong>, Communications Officer, SHSS USIU-A<br>Guided my communication and tech integration skills.<br>Contact: +254728768008, jcherotich@gmail.com</p>
+            <p><strong>Berny Waithera</strong>, Family Friend & Business Professional<br>Supported my early interest in business and tech synergy.<br>Contact: +254723363344, kangethebernice0@gmail.com</p>
+            <p><strong>Lillian Chege</strong>, CEO, LAPS Enterprise<br>Mentored me in business strategy and leadership.<br>Contact: +254723958836</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Wanjiku Kangethe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
